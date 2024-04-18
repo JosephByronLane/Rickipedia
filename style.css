@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    font-family: 'Arial', sans-serif;
+    padding:0;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px
+  }
+  
+.search-prompt {
+    position: absolute;
+    top: 50%;
+    left:42.5%;
+    font-size: 1rem;
+}
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #202328;
+    height: 100%; 
+  }
+  
+  .character-info {
+    flex-grow: 1; 
+    padding: 10px;
+    color: white;
+  }
+  .character-name{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .actions {
+    margin-top: auto; 
+    padding: 10px;
+    text-align: center;
+    font: 1em sans-serif;
+  }
+  
+.actions button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.actions button{
+    color:white;
+}
+.see-more-button{
+    background-color: #49f187;
+}
+
+.delete-button{
+    background-color: #e770b5;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+  
+.site-logo {
+    height: 50px;
+    margin-right: 10px;
+    fill: white;
+}
+
+.site-title {
+    margin-right: 20px;
+    font-size: 24px;
+    color: white;
+}
+  
+.search-bar {
+    flex-grow: 1; 
+    margin-right: 20px;
+    padding: 5px 10px;
+}
+  
+.account-actions {
+    display: flex;
+    gap: 10px; 
+}
+  
+.account-link {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+}
+  
+.account-link:hover {
+    text-decoration: underline;
+}
+.character-status-species {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.character-status-species h3 {
+    margin: 0;
+    color: white;
+    font-weight: normal; /* Adjust as needed */
+}
+
+.character-origin {
+    text-align: center;
+}
+
+.character-origin h3 {
+    margin: 0;
+    color: white;
+    font-weight: normal; /* Adjust as needed */
+}

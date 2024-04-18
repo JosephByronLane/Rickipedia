@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rickipedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="root">
+        <div class="site-header">
+            <img src="logo.svg" alt="Logo" class="site-logo">
+            <h1 class="site-title">Rickipedia</h1>
+            <input type="search" placeholder="Search Rickipedia" class="search-bar" id="search-input">
+            <div class="account-actions">
+                <button class="account-link" id="profes-design">Diseño Profe</button>
+                <button class="account-link" id="my-design">Diseño Joseph</button>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="search-prompt" id="search">
+                Please search something.
+              </div>
+        </div>  
+    </div>
+
+
+    <template id="joseph">
+        <div class="card">
+            <img src="" alt="Image-not-found" class="character-image">
+            <div class="info-container">
+                <div class="character-info">
+                    <h2 id="name" class="character-name"></h2>
+                    <p ><strong>Status:</strong> <span id="status-value"></span></p>
+                    <p><strong>Species:</strong> <span id="species-value"></span> </p>
+                    <p><strong>Origin:</strong> <span id="origin-value"></span> </p>
+                  </div>
+                  <div class="actions">
+                    <button   class="see-more-button">Ver más</button>
+                    <button class="delete-button">Eliminar</button>
+                  </div>
+            </div>           
+          </div>
+    </template>
+    <template id="profe">
+        <div class="card">
+            <img src="" alt="Image-not-found" class="character-image">
+            <div class="info-container">
+                <div class="character-info">
+                    <h2 id="name" class="character-name"></h2>
+                    <div class="character-status-species">
+                        <p ><strong>Status:</strong> <span id="status-value"></span></p>
+                        <p><strong>Species:</strong> <span id="species-value"></span> </p>
+                    </div>
+                    <div class="character-origin">
+                        <p><strong>Origin:</strong> <span id="origin-value"></span> </p>
+                    </div>
+                  <div class="actions">
+                    <button   class="see-more-button">Ver más</button>
+                    <button class="delete-button">Eliminar</button>
+                  </div>
+            </div>           
+          </div>
+    </template>
+</body>
+<script src="script.js"></script>
+</html>
